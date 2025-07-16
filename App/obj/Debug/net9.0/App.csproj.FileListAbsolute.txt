@@ -1,0 +1,17 @@
+C:\Users\ayman\Documents\c#projects\Task-1\App\bin\Debug\net9.0\App.deps.json
+C:\Users\ayman\Documents\c#projects\Task-1\App\bin\Debug\net9.0\App.dll
+C:\Users\ayman\Documents\c#projects\Task-1\App\bin\Debug\net9.0\App.pdb
+C:\Users\ayman\Documents\c#projects\Task-1\App\bin\Debug\net9.0\Contracts.dll
+C:\Users\ayman\Documents\c#projects\Task-1\App\bin\Debug\net9.0\Domain.dll
+C:\Users\ayman\Documents\c#projects\Task-1\App\bin\Debug\net9.0\Contracts.pdb
+C:\Users\ayman\Documents\c#projects\Task-1\App\bin\Debug\net9.0\Domain.pdb
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\App.csproj.AssemblyReference.cache
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\App.AssemblyInfoInputs.cache
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\App.AssemblyInfo.cs
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\App.csproj.CoreCompileInputs.cache
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\App.csproj.Up2Date
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\App.dll
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\refint\App.dll
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\App.pdb
+C:\Users\ayman\Documents\c#projects\Task-1\App\obj\Debug\net9.0\ref\App.dll

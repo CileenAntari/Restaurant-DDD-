@@ -1,0 +1,11 @@
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\bin\Debug\net9.0\Contracts.deps.json
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\bin\Debug\net9.0\Contracts.dll
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\bin\Debug\net9.0\Contracts.pdb
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\obj\Debug\net9.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\obj\Debug\net9.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\obj\Debug\net9.0\Contracts.AssemblyInfo.cs
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\obj\Debug\net9.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\obj\Debug\net9.0\Contracts.dll
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\obj\Debug\net9.0\refint\Contracts.dll
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\obj\Debug\net9.0\Contracts.pdb
+C:\Users\ayman\Documents\c#projects\Task-1\Contracts\obj\Debug\net9.0\ref\Contracts.dll
