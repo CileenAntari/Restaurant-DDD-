@@ -2,7 +2,7 @@ using Domain;
 using Contracts;
 namespace App
 {
-    public class FoodServices : IFoodService
+    public class FoodService : IFoodService
     {
         private List<Food> _foodList = new List<Food>();
         public List<FoodDTO> GetAll()
