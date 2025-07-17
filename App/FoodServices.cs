@@ -1,13 +1,17 @@
-﻿using Domain;
+using Domain;
 using Contracts;
 namespace App
 {
-    public class FoodServices : FoodInterface
+    public class FoodServices : IFoodService
     {
-        public List<Food> _foodList = new List<Food>();
-
+        private List<Food> _foodList = new List<Food>();
         public List<FoodDTO> GetAll()
         {
+            if (_foodList == null)
+            {
+                Console.WriteLine("Food list is not initialized.");
+                return new List<FoodDTO>();
+            }
             return _foodList
                 .Where(f => !f.isDeleted)
                 .Select(f => new FoodDTO
@@ -17,12 +21,16 @@ namespace App
                     Category = f.Category,
                     Price = f.Price
                 }).ToList();
-
         }
 
-        public void add(FoodDTO f)
+        public void Add(FoodDTO f)
         {
-            if (_foodList.Any(o => o.Name.Equals(f.Name)))
+            if (f == null)
+            {
+                Console.WriteLine("Cannot add: input is null.");
+                return;
+            }
+            if (_foodList.Any(o => o.Name.Equals(f.Name, StringComparison.OrdinalIgnoreCase)))
             {
                 Console.WriteLine($"food'{f.Name}' is already exist");
             }
@@ -32,36 +40,44 @@ namespace App
                 _foodList.Add(food);
                 Console.WriteLine($"food '{f.Name}' is added ");
             }
-
         }
 
-        public void remove(FoodDTO f)
+        public void Remove(int id)
         {
-            Food food = _foodList.FirstOrDefault(x => x.Id == f.Id);
-            if (!food.isDeleted && food != null)
+            var food = _foodList.FirstOrDefault(x => x.Id == id);
+            if (food == null)
             {
-                food.isDeleted = true;
-                Console.WriteLine($"food '{f.Name}' has been deleted");
+                Console.WriteLine($"Cannot delete: food with ID {id} not found.");
+                return;
             }
-            else
-                Console.WriteLine($"food'{f.Name}' is not exist");
+            if (food.isDeleted)
+            {
+                Console.WriteLine($"Food with ID {id} is already deleted.");
+                return;
+            }
+            food.isDeleted = true;
+            Console.WriteLine($"Food '{food.Name}' has been deleted.");
         }
 
-        public void update(FoodDTO foodn, FoodDTO foodo)
+        public void Update(int id, FoodDTO f)
         {
-            Food food1 = _foodList.FirstOrDefault(o => o.Name == foodo.Name);
-
-            if (food1 != null && !food1.isDeleted)
+            if (f == null)
             {
-                food1.Name = foodn.Name;
-                food1.Price = foodn.Price;
-                food1.Category = foodn.Category;
-                food1.isUpdated = true;
-
-                Console.WriteLine($"food'{food1.Name}' has been updated");
+                Console.WriteLine("Cannot update: updated data is null.");
+                return;
+            }
+            Food food = _foodList.FirstOrDefault(f => f.Id == id && !f.isDeleted);
+            if (food != null)
+            {
+                food.Name = f.Name;
+                food.Price = f.Price;
+                food.Category = f.Category;
+                Console.WriteLine($"Food ID {id} ('{food.Name}') has been updated.");
             }
             else
-                Console.WriteLine($"food'{food1.Name}' is not exist");
+            {
+                Console.WriteLine($"Food with ID {id} not found or has been deleted.");
+            }
         }
     }
 }
