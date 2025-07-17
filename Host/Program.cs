@@ -6,7 +6,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        FoodServices fl = new FoodServices();  
+        FoodService fl = new FoodService();  
         FoodDTO fd1 = new FoodDTO("pizza", "italian", 50);
         FoodDTO fd2 = new FoodDTO("burger", "junk food", 35);
         FoodDTO fd3 = new FoodDTO("pasta", "italian", 45);
